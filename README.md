@@ -19,16 +19,3 @@ python 0_prepare_data.py --dataset uci
 python 1_train.py --dataset uci --anomaly_per 0.1
 ```
 
-## Cite
-If this code is helpful, please cite the original paper:
-```
-@ARTICLE{liu2021anomaly,
-  author={Liu, Yixin and Pan, Shirui and Wang, Yu Guang and Xiong, Fei and Wang, Liang and Chen, Qingfeng and Lee, Vincent CS},
-  journal={IEEE Transactions on Knowledge and Data Engineering}, 
-  title={Anomaly Detection in Dynamic Graphs via Transformer}, 
-  year={2021},
-  doi={10.1109/TKDE.2021.3124061}}
-
-```
-
-Don't forget to press a "star" after using!
