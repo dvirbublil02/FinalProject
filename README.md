@@ -6,13 +6,7 @@ This repo covers an reference implementation for the paper "[Anomaly detection i
 Some codes are borrowed from [Graph-Bert](https://github.com/jwzhanggy/Graph-Bert) and [NetWalk](https://github.com/chengw07/NetWalk).
 
 ## Requirments
-* Python==3.8
-* PyTorch==1.7.1
-* Transformers==3.5.1
-* Scipy==1.5.2
-* Numpy==1.19.2
-* Networkx==2.5
-* Scikit-learn==0.23.2
+install the list from requirements24.txt 
 
 ## Usage
 ### Step 0: Prepare Data
