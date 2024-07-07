@@ -3,7 +3,7 @@ This repo covers an reference implementation for the paper "[Anomaly detection i
 
 ![framework](framework.png)
 
-Some codes are borrowed from [Graph-Bert](https://github.com/jwzhanggy/Graph-Bert) and [NetWalk](https://github.com/chengw07/NetWalk) and [TADDY] (https://github.com/yuetan031/TADDY_pytorch).
+Some codes are borrowed from [Graph-Bert](https://github.com/jwzhanggy/Graph-Bert) and [NetWalk](https://github.com/chengw07/NetWalk) and [TADDY](https://github.com/yuetan031/TADDY_pytorch).
 
 ## Requirments
 install the list from requirements24.txt 
