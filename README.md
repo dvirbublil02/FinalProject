@@ -14,7 +14,7 @@ This repo covers an reference implementation for the paper "[Anomaly detection i
 ![framework](framework.png)
 
 # Our preprocessing is integrated with the framework:
-
+![preprocessing&integration](preprocessing.jpg)
 
 
 
