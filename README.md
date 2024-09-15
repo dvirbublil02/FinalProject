@@ -7,14 +7,14 @@ Additionally, this approach allows us to highlight key papers and periods that h
 
 In summary, our research seeks to combine the power of anomaly detection and transformer models to not only enhance citation analysis but also provide a tool for tracing and predicting the trajectory of academic research, offering valuable insights into its future direction.
 
-Our work is based on the following research and framework:
+# Our work is based on the following research and framework:
 # TADDY: Anomaly detection in dynamic graphs via transformer
 This repo covers an reference implementation for the paper "[Anomaly detection in dynamic graphs via transformer](https://arxiv.org/pdf/2106.09876.pdf) " By adapting it to identify anomalies concerning citations .
 
 ![framework](framework.png)
 
-Our preprocessing is integrated with the framework.
-![Uploading image.png…]()
+# Our preprocessing is integrated with the framework:
+
 
 
 
