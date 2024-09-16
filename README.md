@@ -23,11 +23,7 @@ Some codes are borrowed from [Graph-Bert](https://github.com/jwzhanggy/Graph-Ber
 ## Requirments
 install the list from requirements24.txt 
 
-## Usage
+## 
 ### Step 0: Prepare Data
-```
-```
 ### Step 1: Train Model
-```
-```
-
+### Step 2: Results
