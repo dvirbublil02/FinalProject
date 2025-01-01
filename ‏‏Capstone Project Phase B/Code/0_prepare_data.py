@@ -156,7 +156,7 @@ def generateDataset(dataset, snap_size, train_per=0.7, anomaly_per=0.01): #t_p-0
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, choices=['uci', 'digg', 'btc_alpha', 'btc_otc','PubMed'], default='PubMed')
-    parser.add_argument('--anomaly_per' ,choices=[0.01, 0.05, 0.1] , type=float, default=0.01)
+    parser.add_argument('--anomaly_per' ,choices=[0.01, 0.05, 0.1] , type=float, default=None)
     parser.add_argument('--train_per', type=float, default=0.5) ###0.5 default
     args = parser.parse_args()
 
