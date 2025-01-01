@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 import re
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import ipywidgets as widgets
+from IPython.display import display,clear_output
 
 # Detect if running in Google Colab
 try:
@@ -68,7 +70,55 @@ def plot_time_series(article_id, years, statuses, publication_year, frame):
     canvas.draw()  # Render the plot
     canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)  # Add the canvas to the Tkinter frame
 
-# Main function to set up the Tkinter GUI
+# Function to plot the anomaly status over time for Colab (directly in notebook)
+def plot_time_series_colab(article_id, years, statuses, publication_year):
+    # Clear the previous output (plot)
+    clear_output(wait=True)
+
+    # Create a new plot
+    fig, ax = plt.subplots(figsize=(8, 4))
+    ax.plot(years, [1 if status == "Anomalous" else 0 for status in statuses], marker='o', label=article_id)
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Anomaly Status (0=Normal, 1=Anomalous)")
+    ax.set_title(f"Anomaly Time Series for Article {article_id}")
+    ax.legend()
+    ax.grid(True)
+    plt.tight_layout()
+
+    # Display the new plot in the same output cell
+    plt.show()
+
+# Function to display the widget-based UI and plot in Colab
+def display_colab_ui(years, articles, article_titles):
+    # Dropdown for selecting an article
+    article_options = [(f"{article_id} - {article_titles.get(article_id, 'Unknown Title')}", article_id) for article_id in articles]
+    article_dropdown = widgets.Dropdown(
+        options=article_options,
+        description='Select Article:',
+        disabled=False,
+    )
+
+    # Function to update plot when an article is selected
+    def on_article_select(change):
+        # Clear the previous plot (but not the dropdown)
+        clear_output(wait=True)
+        
+        article_id = change.new
+        if article_id in articles:
+            publication_year, statuses = articles[article_id]
+            plot_time_series_colab(article_id, years, statuses, publication_year)
+        
+        # Re-display the dropdown after updating the plot
+        display(article_dropdown)
+
+    # Link dropdown to the plot function
+    article_dropdown.observe(on_article_select, names='value')
+
+    # Display the dropdown widget
+    display(article_dropdown)
+
+
+# Main function to set up the Tkinter GUI for local use
 def create_gui(years, articles, article_titles):
     def on_select():
         try:
@@ -121,19 +171,18 @@ def create_gui(years, articles, article_titles):
 
 # Main script entry point
 if __name__ == "__main__":
-    # File paths for anomaly data and article titles
-    anomaly_file = "results/anomaly_status_matrix.txt"
-    titles_file = "data/OurResearch/article_titles_with_date.txt"
+    # File paths for anomaly data and article titles (adjust the paths for your environment)
+    anomaly_file = "results/anomaly_status_matrix.txt"  # Adjust to the correct path
+    titles_file = "data/OurResearch/article_titles_with_date.txt"  # Adjust to the correct path
 
     # Parse the input files
     years, articles = parse_anomaly_matrix(anomaly_file)
     article_titles = parse_article_titles(titles_file)
 
-    # If running in Google Colab, provide an alternative
+    # If running in Google Colab, display the interactive UI
     if COLAB:
-        print("Running in Google Colab. Tkinter GUI is not supported. Please run the code locally for the GUI.")
-        print("You can check the anomaly status in the logs or display static charts.")
-        # You could output data or static plots here in Colab if needed
+        print("Running in Google Colab. Interactive UI using ipywidgets.")
+        display_colab_ui(years, articles, article_titles)
     else:
-        # Launch the GUI application in a local environment like Spyder or PyCharm
+        # Launch the Tkinter GUI application in a local environment like Spyder or PyCharm
         create_gui(years, articles, article_titles)
