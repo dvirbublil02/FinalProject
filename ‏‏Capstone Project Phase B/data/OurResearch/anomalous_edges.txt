@@ -1,0 +1,976 @@
+Snapshot: 4
+Edge: (5777, 12855)
+Anomaly Score: 0.9328
+---
+Snapshot: 4
+Edge: (5923, 18415)
+Anomaly Score: 0.9327
+---
+Snapshot: 4
+Edge: (6080, 11484)
+Anomaly Score: 0.9327
+---
+Snapshot: 4
+Edge: (6455, 18901)
+Anomaly Score: 0.9327
+---
+Snapshot: 4
+Edge: (6665, 8447)
+Anomaly Score: 0.9328
+---
+Snapshot: 4
+Edge: (6665, 12632)
+Anomaly Score: 0.9328
+---
+Snapshot: 5
+Edge: (7815, 9598)
+Anomaly Score: 0.9335
+---
+Snapshot: 5
+Edge: (7815, 17606)
+Anomaly Score: 0.9335
+---
+Snapshot: 5
+Edge: (7815, 17910)
+Anomaly Score: 0.9335
+---
+Snapshot: 5
+Edge: (7815, 18700)
+Anomaly Score: 0.9335
+---
+Snapshot: 5
+Edge: (8458, 13180)
+Anomaly Score: 0.9335
+---
+Snapshot: 7
+Edge: (13895, 18425)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (13971, 17246)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (13980, 14354)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (13983, 16947)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (14103, 18310)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (14299, 18948)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (14354, 18343)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (14467, 18220)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (14721, 16085)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15213, 16085)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15265, 18425)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15506, 18177)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15506, 18396)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15506, 19411)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15917, 16947)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (15987, 17295)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (16080, 16085)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (16413, 17710)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (16947, 18529)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (16947, 19290)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (16947, 19533)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17295, 18535)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17295, 18997)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17356, 18310)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17468, 18310)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17496, 17710)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17549, 19478)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17710, 19161)
+Anomaly Score: 0.9324
+---
+Snapshot: 7
+Edge: (17732, 19068)
+Anomaly Score: 0.9324
+---
+Snapshot: 4
+Edge: (5759, 13980)
+Anomaly Score: 0.9318
+---
+Snapshot: 4
+Edge: (6365, 8272)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 8587)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 10693)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 12042)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 12689)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 13279)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 13587)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 14709)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 16743)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 16830)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 17306)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 17471)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6365, 19480)
+Anomaly Score: 0.9322
+---
+Snapshot: 4
+Edge: (6926, 13980)
+Anomaly Score: 0.9320
+---
+Snapshot: 4
+Edge: (7111, 13980)
+Anomaly Score: 0.9320
+---
+Snapshot: 7
+Edge: (13076, 16761)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13076, 19413)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13079, 18362)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13081, 13938)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13174, 16216)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13188, 15228)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13188, 17525)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13188, 18818)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13202, 13604)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13203, 15729)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13249, 18964)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13332, 15023)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13332, 18183)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13365, 18922)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13426, 13938)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13440, 19010)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13508, 15361)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13604, 16938)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13604, 17003)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13604, 18723)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13636, 15361)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13782, 19113)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13900, 18754)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13905, 16396)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13938, 17112)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13938, 19129)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13948, 16190)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (13948, 18948)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13959, 17651)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13991, 17003)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14026, 15349)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14076, 17003)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14094, 18840)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14212, 16024)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14237, 18731)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14261, 17994)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14372, 17989)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14430, 15669)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14430, 17586)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14443, 19468)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14467, 16912)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14469, 18373)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14470, 17876)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14487, 18835)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14541, 18731)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14566, 15589)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14579, 15857)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14588, 18840)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14610, 19044)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14629, 18461)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14722, 18782)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14746, 15349)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14768, 18928)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14777, 15194)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14777, 16698)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14855, 18011)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14879, 18362)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14913, 17994)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (14967, 15857)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15010, 18749)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15036, 19391)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15040, 17956)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15111, 18011)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15128, 17779)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15217, 18697)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15225, 18842)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15231, 17067)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15231, 18930)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15231, 18972)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15231, 19129)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15252, 16656)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15314, 15857)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15349, 16068)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15349, 17420)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15361, 17232)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15416, 17603)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15425, 17651)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15431, 17203)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15473, 18575)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15499, 15744)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15532, 19027)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15570, 17603)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15589, 19130)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15617, 17003)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15628, 16947)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15652, 16495)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15729, 17334)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15729, 17780)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15729, 19513)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15747, 16190)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15751, 18754)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15764, 16495)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15849, 16029)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15849, 16330)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15849, 16624)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15849, 19210)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15853, 19010)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15857, 16217)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15857, 18111)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15857, 18573)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15857, 19112)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15857, 19247)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15863, 18602)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15863, 19072)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15891, 17340)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (15891, 19129)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (15978, 18964)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16024, 17956)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16085, 18904)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16095, 18749)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16137, 17720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16137, 18373)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16211, 18835)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16216, 17994)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16262, 17876)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16317, 16495)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16363, 18749)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16376, 17474)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16381, 16664)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16396, 16870)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16396, 19357)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16444, 16870)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16495, 18311)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16506, 19112)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16597, 19227)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16656, 17189)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16664, 17994)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16767, 18252)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16789, 18782)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16813, 17651)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16825, 19112)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16849, 18050)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (16916, 18011)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16921, 18050)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17056, 19129)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17056, 19388)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17098, 19051)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (17246, 17603)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (17270, 17876)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17310, 19010)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (17345, 17956)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17361, 18810)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17461, 19402)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (17474, 18073)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17474, 18290)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17520, 18462)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17530, 19032)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17733, 18050)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17769, 18462)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17771, 19112)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17771, 19362)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (17989, 18498)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18011, 19178)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18018, 19010)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18050, 18512)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18061, 18904)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18062, 19044)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18069, 19120)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18079, 18697)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18115, 19468)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18215, 18749)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18276, 18697)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18310, 18723)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18388, 19071)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18449, 18841)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18453, 19560)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18533, 18749)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18645, 18782)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18650, 19112)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18697, 19129)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (3424, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (4920, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (6977, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (7023, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (7282, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (8830, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (13388, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (14636, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (16684, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (17982, 18720)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18204, 18720)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18720, 18941)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18731, 19333)
+Anomaly Score: 0.9321
+---
+Snapshot: 7
+Edge: (18782, 18904)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18782, 19044)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18837, 18842)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (18842, 18922)
+Anomaly Score: 0.9314
+---
+Snapshot: 7
+Edge: (19010, 19502)
+Anomaly Score: 0.9321
+---
