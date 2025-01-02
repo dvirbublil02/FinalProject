@@ -10,7 +10,7 @@ import subprocess
 # List of Python files to execute in order
 scripts = [
     "visual.py", 
-    "visualArtcles.py"
+    "create_and_save_snapshots.py"
 ]
 
 for script in scripts:
