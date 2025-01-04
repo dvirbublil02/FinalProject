@@ -23,7 +23,7 @@ parser.add_argument('--lr', type=float, default=0.001)
 parser.add_argument('--weight_decay', type=float, default=5e-4)
 
 parser.add_argument('--seed', type=int, default=1)
-parser.add_argument('--print_feq', type=int, default=50)
+parser.add_argument('--print_feq', type=int, default=100)
 
 
 args = parser.parse_args()
