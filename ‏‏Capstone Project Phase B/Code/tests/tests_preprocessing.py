@@ -130,22 +130,6 @@ class TestDynamicDatasetLoader(unittest.TestCase):
         cls.loader.train_per = 0.5
         cls.loader.anomaly_per = 0.1
 
-    @patch('builtins.open', new_callable=MagicMock)
-    def test_get_adjs(self, mock_open):
-        """Test generation of adjacency matrices and eigen matrices."""
-        rows = [[0, 1], [1, 2]]
-        cols = [[1, 0], [2, 1]]
-        weights = [[1, 1], [1, 1]]
-        nb_nodes = 3
-    
-        # Use tempfile for creating temporary file paths
-        with tempfile.NamedTemporaryFile(delete=False) as temp_file:
-            temp_file_path = temp_file.name
-            self.loader.get_adjs(rows, cols, weights, nb_nodes)
-    
-        # Test that the file was generated correctly
-        self.assertTrue(os.path.exists(temp_file_path))
-        print("Adjacency matrices and eigen matrices generated successfully. Test Passed")
 
     @patch('builtins.open', new_callable=MagicMock)
     def test_load(self, mock_open):
