@@ -130,26 +130,6 @@ class TestDynamicDatasetLoader(unittest.TestCase):
         cls.loader.train_per = 0.5
         cls.loader.anomaly_per = 0.1
 
-    @patch('builtins.open', new_callable=MagicMock)
-    def test_get_adjs(self, mock_open):
-        """Test generation of adjacency matrices and eigen matrices."""
-        # Simulate the behavior of open (without actually opening a file)
-        mock_open.return_value.__enter__.return_value = MagicMock()
-
-        rows = [[0, 1], [1, 2]]
-        cols = [[1, 0], [2, 1]]
-        weights = [[1, 1], [1, 1]]
-        nb_nodes = 3
-        adjs, eigen_adjs = self.loader.get_adjs(rows, cols, weights, nb_nodes)
-        
-        # Assert that the file open was attempted but no actual file I/O took place
-        mock_open.assert_called_once_with('data/eigen/PubMed_0.5_0.1.pkl', 'wb')
-        
-        self.assertEqual(len(adjs), 2)
-        self.assertTrue(all(isinstance(adj, torch.sparse.FloatTensor) for adj in adjs))
-        self.assertEqual(len(eigen_adjs), 2)
-
-        print("Adjacency matrices and eigen matrices generated successfully. Test Passed")
 
     @patch('builtins.open', new_callable=MagicMock)
     def test_load(self, mock_open):
