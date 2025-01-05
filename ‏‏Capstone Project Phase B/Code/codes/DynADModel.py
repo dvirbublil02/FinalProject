@@ -7,7 +7,7 @@ from codes.BaseModel import BaseModel
 import sys
 import time
 import numpy as np
-
+import os
 from sklearn import metrics
 from codes.utils import dicts_to_embeddings, compute_batch_hop, compute_zero_WL
 
@@ -135,7 +135,7 @@ class DynADModel(BertPreTrainedModel):
 
             loss_train /= len(self.data['snap_train']) - self.config.window_size + 1
             print('Epoch: {}, loss:{:.4f}, Time: {:.4f}s'.format(epoch + 1, loss_train, time.time() - t_epoch_begin))
-
+           
             if ((epoch + 1) % self.args.print_feq) == 0:
                 self.eval()
                 preds = []
@@ -169,8 +169,9 @@ class DynADModel(BertPreTrainedModel):
                 # When running in Colab, multiple GPUs and different computational power affect the reliability of results, leading to slightly lower AUC.
                 # To compensate, a lower threshold (0.85) is used for Colab.
                 # Locally, a higher threshold (0.932) is used to ensure only highly anomalous edges are saved.
-                threshold = 0.862 if 'google.colab' in sys.modules else 0.932
-
+                is_colab = 'COLAB_GPU' in os.environ
+                threshold = 0.72 if is_colab else 0.9125
+                
                 # After evaluation, save anomalous edges with their scores, filtering fake edges
                 for snap, pred in zip(self.data['snap_test'], preds):
                     for edge_idx, score in enumerate(pred):
