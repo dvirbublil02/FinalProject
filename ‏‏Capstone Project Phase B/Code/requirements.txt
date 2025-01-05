@@ -1,0 +1,12 @@
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.4.2
+torch==2.5.0
+matplotlib==3.8.4
+ipywidgets==7.8.1
+IPython==8.25.0
+networkx==3.2.1
+transformers==4.45.2
+
+# Optional: tkinter (usually comes pre-installed with Python), in colab dont install this . we using different approuch
+# On Linux, you can install it with: sudo apt-get install python3-tk
