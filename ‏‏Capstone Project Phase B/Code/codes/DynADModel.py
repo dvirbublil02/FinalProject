@@ -170,7 +170,7 @@ class DynADModel(BertPreTrainedModel):
                 # To compensate, a lower threshold (0.85) is used for Colab.
                 # Locally, a higher threshold (0.932) is used to ensure only highly anomalous edges are saved.
                 is_colab = 'COLAB_GPU' in os.environ
-                threshold = 0.775 if is_colab else 0.9125
+                threshold = 0.77 if is_colab else 0.9125
                 
                 # After evaluation, save anomalous edges with their scores, filtering fake edges
                 for snap, pred in zip(self.data['snap_test'], preds):
