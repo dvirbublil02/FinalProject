@@ -10,6 +10,7 @@ import numpy as np
 import os
 from sklearn import metrics
 from codes.utils import dicts_to_embeddings, compute_batch_hop, compute_zero_WL
+from sklearn.metrics import roc_curve
 
 
 class DynADModel(BertPreTrainedModel):
@@ -84,7 +85,51 @@ class DynADModel(BertPreTrainedModel):
 
             negative_edges.append(negative_edge)
         return negative_edges
+        
+            # This function plots and saves the training loss curve to the results directory.
+    def plot_loss_curve(self):
+        plt.figure()
+        plt.plot(range(1, len(self.loss_history) + 1), self.loss_history, label='Training Loss', color='blue')
+        plt.xlabel('Epoch')
+        plt.ylabel('Loss')
+        plt.title('Training Loss Curve')
+        plt.legend()
 
+        # Remove axis numbers (ticks)
+        plt.yticks([])  # Hide y-axis ticks
+        
+        # Save the plot to the 'results' folder
+        if not os.path.exists('results'):
+            os.makedirs('results')  # Create the directory if it doesn't exist
+        plt.savefig('results/training_loss_curve.png')
+        plt.show()
+    
+    # This function plots and saves the ROC curve with each snapshot having a different color, hiding axis numbers.
+    def plot_roc_curve(self, y_true, y_pred):
+        fpr, tpr, _ = roc_curve(y_true, y_pred)
+        plt.figure()
+
+        # Plot ROC curve with a different color for each snapshot
+        colors = plt.cm.get_cmap('tab10', len(fpr))  # Color map for different ROC curves
+
+        plt.plot(fpr, tpr, label='ROC Curve', color=colors(0))  # Use first color for the curve
+
+        plt.xlabel('FPR')  # False Positive Rate
+        plt.ylabel('TPR')  # True Positive Rate
+        plt.title('ROC Curve')
+        plt.legend(loc='lower right')
+
+        # Remove axis numbers (ticks)
+        plt.xticks([])  # Hide x-axis ticks
+        plt.yticks([])  # Hide y-axis ticks
+
+        # Save the plot to the 'results' folder
+        if not os.path.exists('results'):
+            os.makedirs('results')  # Create the directory if it doesn't exist
+        plt.savefig('results/roc_curve.png')
+        plt.show()
+        
+        
     def train_model(self, max_epoch):
         optimizer = optim.Adam(self.parameters(), lr=self.lr, weight_decay=self.weight_decay)
         raw_embeddings, wl_embeddings, hop_embeddings, int_embeddings, time_embeddings = self.generate_embedding(self.data['edges'])
@@ -96,6 +141,8 @@ class DynADModel(BertPreTrainedModel):
 
         # Read fake anomalous edges
         fake_edges = self.read_fake_edges('anomalous_fake_edges.txt')
+
+        self.loss_history = []  # Track loss history for plotting
 
         for epoch in range(max_epoch):
             t_epoch_begin = time.time()
@@ -134,8 +181,12 @@ class DynADModel(BertPreTrainedModel):
                 loss_train += loss.detach().item()
 
             loss_train /= len(self.data['snap_train']) - self.config.window_size + 1
+            self.loss_history.append(loss_train)  # Record loss history
             print('Epoch: {}, loss:{:.4f}, Time: {:.4f}s'.format(epoch + 1, loss_train, time.time() - t_epoch_begin))
-           
+            
+            # Call plot_loss_curve every 1 epoch
+            self.plot_loss_curve()
+
             if ((epoch + 1) % self.args.print_feq) == 0:
                 self.eval()
                 preds = []
@@ -165,6 +216,9 @@ class DynADModel(BertPreTrainedModel):
                     print("Snap: %02d | AUC: %.4f" % (self.data['snap_test'][i], aucs[i]))
                 print('TOTAL AUC :{:.4f}'.format(auc_full_top_3))
 
+                # Call plot_roc_curve after evaluating AUC
+                self.plot_roc_curve(y_test, preds)
+
                 # Adjust threshold based on environment
                 # When running in Colab, multiple GPUs and different computational power affect the reliability of results, leading to slightly lower AUC.
                 # To compensate, a lower threshold (0.85) is used for Colab.
@@ -187,6 +241,7 @@ class DynADModel(BertPreTrainedModel):
                                     anomalous_edges[key] = score
 
         self.save_anomalous_edges(anomalous_edges)
+
 
     def save_anomalous_edges(self, anomalous_edges):
         with open('data/OurResearch/anomalous_edges.txt', 'w') as f:
