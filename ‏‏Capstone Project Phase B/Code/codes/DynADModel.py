@@ -105,30 +105,39 @@ class DynADModel(BertPreTrainedModel):
         plt.savefig('results/training_loss_curve.png')
         plt.show()
     
-    # This function plots and saves the ROC curve with each snapshot having a different color, hiding axis numbers.
     def plot_roc_curve(self, y_true, y_pred):
-        fpr, tpr, _ = roc_curve(y_true, y_pred)
+        # Flatten y_true and y_pred in case they are multi-dimensional
+        y_true = np.hstack(y_true)
+        y_pred = np.hstack(y_pred)
+    
+        # Ensure y_true is a binary array
+        y_true = (y_true > 0).astype(int)
+    
+        # Compute ROC curve
+        fpr, tpr, thresholds = roc_curve(y_true, y_pred)
+    
         plt.figure()
-
+        
         # Plot ROC curve with a different color for each snapshot
         colors = plt.cm.get_cmap('tab10', len(fpr))  # Color map for different ROC curves
-
+    
         plt.plot(fpr, tpr, label='ROC Curve', color=colors(0))  # Use first color for the curve
-
+    
         plt.xlabel('FPR')  # False Positive Rate
         plt.ylabel('TPR')  # True Positive Rate
         plt.title('ROC Curve')
         plt.legend(loc='lower right')
-
+    
         # Remove axis numbers (ticks)
         plt.xticks([])  # Hide x-axis ticks
         plt.yticks([])  # Hide y-axis ticks
-
+    
         # Save the plot to the 'results' folder
         if not os.path.exists('results'):
             os.makedirs('results')  # Create the directory if it doesn't exist
         plt.savefig('results/roc_curve.png')
         plt.show()
+
         
         
     def train_model(self, max_epoch):
@@ -185,8 +194,7 @@ class DynADModel(BertPreTrainedModel):
             self.loss_history.append(loss_train)  # Record loss history
             print('Epoch: {}, loss:{:.4f}, Time: {:.4f}s'.format(epoch + 1, loss_train, time.time() - t_epoch_begin))
             
-            # Call plot_loss_curve every 1 epoch
-            self.plot_loss_curve()
+            
 
             if ((epoch + 1) % self.args.print_feq) == 0:
                 self.eval()
@@ -219,7 +227,8 @@ class DynADModel(BertPreTrainedModel):
 
                 # Call plot_roc_curve after evaluating AUC
                 self.plot_roc_curve(y_test, preds)
-
+                # Call plot_loss_curve every 
+                self.plot_loss_curve()
                 # Adjust threshold based on environment
                 # When running in Colab, multiple GPUs and different computational power affect the reliability of results, leading to slightly lower AUC.
                 # To compensate, a lower threshold (0.85) is used for Colab.
