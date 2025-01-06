@@ -11,6 +11,7 @@ import os
 from sklearn import metrics
 from codes.utils import dicts_to_embeddings, compute_batch_hop, compute_zero_WL
 from sklearn.metrics import roc_curve
+import matplotlib.pyplot as plt
 
 
 class DynADModel(BertPreTrainedModel):
