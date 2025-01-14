@@ -98,7 +98,7 @@ class DynADModel(BertPreTrainedModel):
 
         # Remove axis numbers (ticks)
         plt.yticks([])  # Hide y-axis ticks
-        
+        plt.xticks([])
         # Save the plot to the 'results' folder
         if not os.path.exists('results'):
             os.makedirs('results')  # Create the directory if it doesn't exist
@@ -184,15 +184,21 @@ class DynADModel(BertPreTrainedModel):
                 optimizer.zero_grad()
 
                 output = self.forward(int_embedding, hop_embedding, time_embedding).squeeze()
-                loss = F.binary_cross_entropy_with_logits(output, y)
+                loss = F.binary_cross_entropy_with_logits(output, y,reduction='mean' )
                 loss.backward()
                 optimizer.step()
 
                 loss_train += loss.detach().item()
-
+                
             loss_train /= len(self.data['snap_train']) - self.config.window_size + 1
-            self.loss_history.append(loss_train)  # Record loss history
-            print('Epoch: {}, loss:{:.4f}, Time: {:.4f}s'.format(epoch + 1, loss_train, time.time() - t_epoch_begin))
+    
+            # Print the epoch number
+            print(f'Epoch: {epoch + 1}, Time: {time.time() - t_epoch_begin:.4f}s')
+    
+            # Print the loss only every 15 epochs
+            if (epoch + 1) == 1 or (epoch + 1) % 20 == 0:
+                self.loss_history.append(loss_train)  # Record loss for the plot
+                print(f'Loss: {loss_train:.4f}')
             
             
 
