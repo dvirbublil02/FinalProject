@@ -221,15 +221,11 @@ class DynADModel(BertPreTrainedModel):
 
                 aucs, auc_full = self.evaluate(y_test, preds)
 
-                # Using only the highest AUC scores helps avoid being affected by outliers or poorly performing snapshots, 
-                # which might happen due to the data not being evenly distributed or having noisy edges. 
-                # This ensures that the evaluation focuses on the more reliable snapshots and provides a better overall model performance assessment.
-                top_3_aucs = sorted(aucs.values(), reverse=True)[:3]  # Get the top 3 AUC scores
-                auc_full_top_3 = np.mean(top_3_aucs)  # Average the top 3 AUC scores
+                
 
                 for i in range(len(self.data['snap_test'])):
                     print("Snap: %02d | AUC: %.4f" % (self.data['snap_test'][i], aucs[i]))
-                print('TOTAL AUC :{:.4f}'.format(auc_full_top_3))
+                print('TOTAL AUC :{:.4f}'.format(auc_full))
 
                 # Call plot_roc_curve after evaluating AUC
                 self.plot_roc_curve(y_test, preds)
