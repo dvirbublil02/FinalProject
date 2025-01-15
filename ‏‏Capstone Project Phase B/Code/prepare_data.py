@@ -5,6 +5,7 @@ import time
 import os
 import argparse
 from codes.Snapshots import save_snapshots #our change 
+import numpy as np
 
 def preprocessDataset(dataset):
     print('Preprocess dataset: ' + dataset)
@@ -75,6 +76,8 @@ def generateDataset(dataset, snap_size, train_per=0.7, anomaly_per=0.01): #t_p-0
         comments='%',
         delimiter=' ')
     edges = edges[:, 0:2].astype(dtype=int)
+	np.random.seed(1)
+	np.random.shuffle(edges)
     vertices = np.unique(edges)
     m = len(edges)
     n = len(vertices)
@@ -157,7 +160,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, choices=['uci', 'digg', 'btc_alpha', 'btc_otc','PubMed'], default='PubMed')
     parser.add_argument('--anomaly_per' ,choices=[0.01, 0.05, 0.1] , type=float, default=0.01)
-    parser.add_argument('--train_per', type=float, default=0.5) ###0.5 default
+    parser.add_argument('--train_per', type=float, default=0.7) ###0.5 default
     args = parser.parse_args()
 
     snap_size_dict = {'uci':1000, 'digg':6000, 'btc_alpha':1000, 'btc_otc':2000,'PubMed':5800}

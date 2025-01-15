@@ -96,9 +96,7 @@ class DynADModel(BertPreTrainedModel):
         plt.title('Training Loss Curve')
         plt.legend()
 
-        # Remove axis numbers (ticks)
-        plt.yticks([])  # Hide y-axis ticks
-        plt.xticks([])
+
         # Save the plot to the 'results' folder
         if not os.path.exists('results'):
             os.makedirs('results')  # Create the directory if it doesn't exist
@@ -191,13 +189,13 @@ class DynADModel(BertPreTrainedModel):
                 loss_train += loss.detach().item()
                 
             loss_train /= len(self.data['snap_train']) - self.config.window_size + 1
-    
+			self.loss_history.append(loss_train)  # Record loss for the plot
             # Print the epoch number
-            print(f'Epoch: {epoch + 1}, Time: {time.time() - t_epoch_begin:.4f}s')
-    
+            print(f'Epoch: {epoch + 1},Loss: {loss_train}, Time: {time.time() - t_epoch_begin:.4f}s')
+			
             # Print the loss only every 15 epochs
             if (epoch + 1) == 1 or (epoch + 1) % 20 == 0:
-                self.loss_history.append(loss_train)  # Record loss for the plot
+                
                 print(f'Loss: {loss_train:.4f}')
             
             
