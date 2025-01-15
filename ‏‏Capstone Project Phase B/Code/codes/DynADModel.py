@@ -189,7 +189,8 @@ class DynADModel(BertPreTrainedModel):
                 loss_train += loss.detach().item()
                 
             loss_train /= len(self.data['snap_train']) - self.config.window_size + 1
-			self.loss_history.append(loss_train)  # Record loss for the plot
+            
+            self.loss_history.append(loss_train)  # Record loss for the plot
             # Print the epoch number
             print(f'Epoch: {epoch + 1},Loss: {loss_train}, Time: {time.time() - t_epoch_begin:.4f}s')
 			

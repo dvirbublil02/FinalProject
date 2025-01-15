@@ -76,8 +76,9 @@ def generateDataset(dataset, snap_size, train_per=0.7, anomaly_per=0.01): #t_p-0
         comments='%',
         delimiter=' ')
     edges = edges[:, 0:2].astype(dtype=int)
-	np.random.seed(1)
-	np.random.shuffle(edges)
+    
+    np.random.seed(1)
+    np.random.shuffle(edges)
     vertices = np.unique(edges)
     m = len(edges)
     n = len(vertices)
