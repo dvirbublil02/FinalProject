@@ -230,12 +230,8 @@ class DynADModel(BertPreTrainedModel):
                 self.plot_roc_curve(y_test, preds)
                 # Call plot_loss_curve every 
                 self.plot_loss_curve()
-                # Adjust threshold based on environment
-                # When running in Colab, multiple GPUs and different computational power affect the reliability of results, leading to slightly lower AUC.
-                # To compensate, a lower threshold (0.85) is used for Colab.
-                # Locally, a higher threshold (0.932) is used to ensure only highly anomalous edges are saved.
-                is_colab = 'COLAB_GPU' in os.environ
-                threshold = 0.8238 if is_colab else 0.9124
+
+                threshold = 0.8238 
                 
                 # After evaluation, save anomalous edges with their scores, filtering fake edges
                 for snap, pred in zip(self.data['snap_test'], preds):
