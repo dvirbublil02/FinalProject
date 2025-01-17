@@ -222,8 +222,7 @@ class DynADModel(BertPreTrainedModel):
 
                 
 
-                for i in range(len(self.data['snap_test'])):
-                    print("Snap: %02d | AUC: %.4f" % (self.data['snap_test'][i], aucs[i]))
+
                 print('TOTAL AUC :{:.4f}'.format(auc_full))
 
                 # Call plot_roc_curve after evaluating AUC
