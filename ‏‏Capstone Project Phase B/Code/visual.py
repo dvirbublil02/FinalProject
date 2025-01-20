@@ -185,6 +185,7 @@ def get_mesh_terms_and_categories(pmid):
     }
     
     try:
+        print(f"Try to fetch categorie for article : {pmid} , missing title will be count as Unknown")
         response = requests.get(url, params=params, timeout=10)
         response.raise_for_status()  # Raise an HTTPError for bad responses (4xx and 5xx)
 
@@ -202,7 +203,7 @@ def get_mesh_terms_and_categories(pmid):
         return mesh_terms if mesh_terms else {"No MeSH Terms Found": ["Unknown"]}
 
     except Exception as e:
-        print(f"Error fetching MeSH terms for PubMed ID {pmid}: {e}")
+        #print(f"Error fetching MeSH terms for PubMed ID {pmid}: {e}")
         return None
 
 # Categorize articles based on MeSH terms
