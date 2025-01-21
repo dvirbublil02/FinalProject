@@ -21,7 +21,7 @@ This repo covers an reference implementation for the paper "[Anomaly detection i
 Some codes are borrowed from [Graph-Bert](https://github.com/jwzhanggy/Graph-Bert) and [NetWalk](https://github.com/chengw07/NetWalk) and [TADDY](https://github.com/yuetan031/TADDY_pytorch).
 
 ## Requirments
-install the list from requirements24.txt 
+install the list from requirements.txt 
 
 ## 
 ### Step 0: Prepare Data
