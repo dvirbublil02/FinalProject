@@ -252,7 +252,7 @@ class DynADModel(BertPreTrainedModel):
     def save_anomalous_edges(self, anomalous_edges):
         with open('data/OurResearch/anomalous_edges.txt', 'w') as f:
             for (snap, edge), score in anomalous_edges.items():
-                f.write(f"Snapshot: {snap}\n")
+                f.write(f"Snapshot number: {snap}\n")
                 f.write(f"Edge: {edge}\n")
                 f.write(f"Anomaly Score: {score:.4f}\n")
                 f.write('---\n')
